@@ -21,7 +21,7 @@ namespace DiezMil
             Console.WriteLine("Enter the risk factor list, separate the values by commas:");
             Console.ReadLine();
 
-            
+            //parse list
         }
     }
 }

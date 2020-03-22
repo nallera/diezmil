@@ -5,10 +5,16 @@ namespace DiezMil
     public class Game
     {
         private string option;
+        private Player user;
+        private BotPlayer bot;
+        private TestParameters testParams;
 
         public Game()
         {
             option = "";
+            user = new Player();
+            bot = new BotPlayer();
+            testParams = new TestParameters();
         }
 
         public void SelectOption()
@@ -30,17 +36,23 @@ namespace DiezMil
 
             }
         }
+        
+        private void ShowScores()
+        {
+            Console.WriteLine($"User score: {user.GetScore()}");
+        }
 
         public void PlayAgainstBot()
         {
-            var bot = new BotPlayer();
             bot.SelectBehavior();
-            var user = new Player();
 
             while(user.GetScore() < 10000 && bot.GetScore() < 10000)
             {
                 user.PlayTurn();
-                bot.PlayTurn();
+                ShowScores();
+                //bot.PlayTurn();
+                //Console.WriteLine("End of turn.");
+                //ShowScores();
             }
 
             if(user.GetScore() > bot.GetScore())
@@ -54,11 +66,7 @@ namespace DiezMil
 
         public void CheckStrategy()
         {
-            var bot = new BotPlayer();
-            var testParams = new TestParameters();
-
             testParams.DefineParams();
-            
 
         }
 
