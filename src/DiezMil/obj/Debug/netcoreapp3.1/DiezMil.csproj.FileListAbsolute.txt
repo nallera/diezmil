@@ -1,0 +1,13 @@
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.csprojAssemblyReference.cache
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.csproj.CoreCompileInputs.cache
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.AssemblyInfoInputs.cache
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.AssemblyInfo.cs
+E:\coding\diezmil\src\DiezMil\bin\Debug\netcoreapp3.1\DiezMil.exe
+E:\coding\diezmil\src\DiezMil\bin\Debug\netcoreapp3.1\DiezMil.deps.json
+E:\coding\diezmil\src\DiezMil\bin\Debug\netcoreapp3.1\DiezMil.runtimeconfig.json
+E:\coding\diezmil\src\DiezMil\bin\Debug\netcoreapp3.1\DiezMil.runtimeconfig.dev.json
+E:\coding\diezmil\src\DiezMil\bin\Debug\netcoreapp3.1\DiezMil.dll
+E:\coding\diezmil\src\DiezMil\bin\Debug\netcoreapp3.1\DiezMil.pdb
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.dll
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.pdb
+E:\coding\diezmil\src\DiezMil\obj\Debug\netcoreapp3.1\DiezMil.genruntimeconfig.cache
