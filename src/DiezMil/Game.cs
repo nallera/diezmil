@@ -39,12 +39,7 @@ namespace DiezMil
         
         private void ShowScores()
         {
-            TableDrawer.drawScoreRoof();
-            TableDrawer.drawScoreNames();
-            TableDrawer.drawScoreMiddle();
-            TableDrawer.drawScorePoints(user.GetScore(),bot.GetScore());
-            TableDrawer.drawScoreFloor();
-
+            TableDrawer.drawScore(user.GetScore(),bot.GetScore());
         }
 
         public void PlayAgainstBot()

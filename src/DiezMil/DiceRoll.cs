@@ -75,14 +75,7 @@ namespace DiezMil
 
         public bool HasScore()
         {
-            if(freeDice.HasScore() == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return freeDice.HasScore();
         }
 
         public bool SetKept(List<int> diceCombination)
