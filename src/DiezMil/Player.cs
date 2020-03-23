@@ -47,9 +47,8 @@ namespace DiezMil
                                 diceCombination = Array.ConvertAll(Console.ReadLine().Split(','), int.Parse).ToList();
                                 break;
                             }
-                            catch(FormatException ex)
+                            catch(FormatException)
                             {
-                                Console.WriteLine(ex);
                                 Console.WriteLine("Wrong format. Try again.");
                             }
                         }

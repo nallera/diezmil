@@ -39,7 +39,12 @@ namespace DiezMil
         
         private void ShowScores()
         {
-            Console.WriteLine($"User score: {user.GetScore()}");
+            TableDrawer.drawScoreRoof();
+            TableDrawer.drawScoreNames();
+            TableDrawer.drawScoreMiddle();
+            TableDrawer.drawScorePoints(user.GetScore(),bot.GetScore());
+            TableDrawer.drawScoreFloor();
+
         }
 
         public void PlayAgainstBot()

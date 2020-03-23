@@ -9,6 +9,7 @@ namespace DiezMil
         public int[] numbers;
         public int leg;
         public int Count;
+        public bool stairs;
 
         public Dice()
         {
@@ -16,11 +17,16 @@ namespace DiezMil
             numbers = new int[6];
             leg = 6;
             Count = 0;
+            stairs = false;
         }
 
 
         public void findNumbersAndLeg()
         {
+            for(int i = 0; i < 6; i++)
+            {
+                numbers[i] = 0;
+            }
             foreach(var die in dieList)
             {
                 numbers[die-1]++;
@@ -34,7 +40,8 @@ namespace DiezMil
                     break;
                 }
             }
-
+            
+            stairs = isStairs();
         }
 
         internal void Add(int die)
@@ -58,7 +65,7 @@ namespace DiezMil
         {
             findNumbersAndLeg();
 
-            if(numbers[0] > 0 || numbers[4] > 0  || leg > 0)
+            if(numbers[0] > 0 || numbers[4] > 0  || leg < 6 || stairs == true)
             {
                 return true;
             }
@@ -77,6 +84,26 @@ namespace DiezMil
             else
             {
                 return false;
+            }
+        }
+
+        public void showDice(string diceName,bool diceID)
+        {
+            if(diceID == true)
+            {
+                Console.WriteLine($"{diceName}:");
+                TableDrawer.drawRoof();
+                TableDrawer.drawID(Count);
+                TableDrawer.drawMiddle();
+                TableDrawer.drawNumber(dieList);
+                TableDrawer.drawFloor();
+            }
+            else
+            {
+                Console.WriteLine($"{diceName}:");
+                TableDrawer.drawRoof();
+                TableDrawer.drawNumber(dieList);
+                TableDrawer.drawFloor();
             }
         }
     }
